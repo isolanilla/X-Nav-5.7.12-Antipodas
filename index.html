@@ -53,7 +53,7 @@
 
           output.appendChild(img);
 
-          output2.innerHTML = '<p>Latitude is ' + latitude + '° <br>Longitude is ' + longitude + '°</p>';
+          output2.innerHTML = '<p>Latitude is ' + todegressLA(latitude) + '° <br>Longitude is ' +  todegressLO(longitude) + '°</p>';
           var img2 = new Image();
           img2.src = "https://maps.googleapis.com/maps/api/staticmap?center=" + todegressLA(latitude) + "," + todegressLO(longitude) + "&zoom=5&size=300x300&sensor=false";
           output2.appendChild(img2);
